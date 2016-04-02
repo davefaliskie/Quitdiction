@@ -15,11 +15,12 @@ class ViewControllerRegisterUser: UIViewController {
     var userName = String()
     var selectedGender = String()
     var birthday = String()
-    var user = ["firstName":"null","lastName":"null","userName":"null","gender":"null","birthday":"null"]
+    var user = ["firstName":"null","lastName":"null","userName":"null","password":"null","gender":"null","birthday":"null"]
     
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var userNameTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var alertLabel: UILabel!
   
     @IBOutlet var genderSegmentControl: UISegmentedControl!
@@ -103,6 +104,17 @@ class ViewControllerRegisterUser: UIViewController {
                 user["userName"] = usersName
             } else {
                 alertLabel.text = "Please enter your user name"
+                hideAlertLabelAfterTime()
+                return false
+            }
+        }
+        
+        if let password = passwordTextField.text as String? {
+            
+            if password != "" {
+                user["password"] = password
+            } else {
+                alertLabel.text = "Please enter your password"
                 hideAlertLabelAfterTime()
                 return false
             }
