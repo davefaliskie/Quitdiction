@@ -16,12 +16,18 @@ class ViewControllerHowOftenDoYouUse: UIViewController, UIPickerViewDelegate, UI
     @IBOutlet var frequencyTextField: UITextField!
     @IBOutlet var frequencyPicker: UIPickerView!
     
+    @IBOutlet weak var frequencyTitle: UILabel!
+    
+    @IBAction func showLabel(sender: AnyObject) {
+        frequencyTitle.text = "\(frequencyTextField.text!) times per \(selectedFrequency)"
+    }
+    
     var myAddiction = String()
     
     var addictionViaSegway = String()
     
     var frequencies = ["Hour", "Day", "Week"]
-    var selectedFrequency = String()
+    var selectedFrequency = "Hour"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +83,11 @@ class ViewControllerHowOftenDoYouUse: UIViewController, UIPickerViewDelegate, UI
         selectedFrequency = frequencies[row]
         
         return pickerLabel!;
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedFrequency = frequencies[row]
+        frequencyTitle.text = "\(frequencyTextField.text!) times per \(selectedFrequency)"
     }
     
     
