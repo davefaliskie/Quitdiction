@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HD4-SF-JRg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HD4-SF-JRg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -126,6 +126,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="registerButton:" destination="hkY-Eo-dyq" eventType="touchUpInside" id="hao-Ue-WMB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Njw-VF-HBi"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MUb-h4-Ibd">
@@ -644,7 +645,8 @@
                                         <exclude reference="x8t-Dt-DFk"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="230" y="40" width="140.5" height="35"/>
                                     <mask key="constraints">
                                         <include reference="x8t-Dt-DFk"/>
                                     </mask>
@@ -667,7 +669,8 @@
                                         <exclude reference="PXD-f3-1Ae"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="120" y="83" width="360" height="24"/>
                                     <mask key="constraints">
                                         <include reference="G5z-HZ-OLw"/>
                                         <include reference="PXD-f3-1Ae"/>
@@ -693,7 +696,8 @@
                                         <exclude reference="e9i-jF-3d6"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="241" y="204" width="118" height="118"/>
                                     <mask key="constraints">
                                         <include reference="Ufg-72-374"/>
                                         <include reference="e9i-jF-3d6"/>
@@ -720,7 +724,8 @@
                                         <exclude reference="f5v-Yu-Ukg"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="241" y="409" width="118" height="118"/>
                                     <mask key="constraints">
                                         <include reference="728-F3-kf9"/>
                                         <include reference="f5v-Yu-Ukg"/>
@@ -774,17 +779,17 @@
                                 <exclude reference="cye-KB-fV4"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="CBl-G4-O9M"/>
-                                <exclude reference="yXS-vw-miz"/>
-                                <exclude reference="9pB-g6-DdR"/>
-                                <exclude reference="VWt-Vc-Und"/>
-                                <exclude reference="oUJ-DO-x6e"/>
+                                <exclude reference="D2v-tQ-khv"/>
+                                <exclude reference="juH-8l-TdM"/>
                                 <exclude reference="4sh-sk-18w"/>
                                 <exclude reference="PK2-eG-Ob4"/>
                                 <exclude reference="0Pu-bY-nKR"/>
                                 <exclude reference="Jca-qE-Ir4"/>
-                                <exclude reference="D2v-tQ-khv"/>
-                                <exclude reference="juH-8l-TdM"/>
+                                <exclude reference="oUJ-DO-x6e"/>
+                                <exclude reference="CBl-G4-O9M"/>
+                                <exclude reference="yXS-vw-miz"/>
+                                <exclude reference="9pB-g6-DdR"/>
+                                <exclude reference="VWt-Vc-Und"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -796,17 +801,17 @@
                                 <include reference="cye-KB-fV4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="CBl-G4-O9M"/>
-                                <include reference="yXS-vw-miz"/>
-                                <include reference="9pB-g6-DdR"/>
-                                <include reference="VWt-Vc-Und"/>
-                                <include reference="oUJ-DO-x6e"/>
+                                <include reference="D2v-tQ-khv"/>
+                                <include reference="juH-8l-TdM"/>
                                 <include reference="4sh-sk-18w"/>
                                 <include reference="PK2-eG-Ob4"/>
                                 <include reference="0Pu-bY-nKR"/>
                                 <include reference="Jca-qE-Ir4"/>
-                                <include reference="D2v-tQ-khv"/>
-                                <include reference="juH-8l-TdM"/>
+                                <include reference="oUJ-DO-x6e"/>
+                                <include reference="CBl-G4-O9M"/>
+                                <include reference="yXS-vw-miz"/>
+                                <include reference="9pB-g6-DdR"/>
+                                <include reference="VWt-Vc-Und"/>
                             </mask>
                         </variation>
                     </view>
@@ -1629,11 +1634,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Jdq-iV-OmD"/>
-        <segue reference="7vs-J8-hii"/>
-        <segue reference="Njw-VF-HBi"/>
-        <segue reference="EsG-18-UYf"/>
-        <segue reference="LI9-9A-JdG"/>
         <segue reference="LI9-9A-JdG"/>
         <segue reference="Jdq-iV-OmD"/>
         <segue reference="Njw-VF-HBi"/>
