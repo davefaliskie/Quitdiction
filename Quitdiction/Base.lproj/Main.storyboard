@@ -98,6 +98,9 @@
                                         <include reference="kJt-t6-0cR"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="genderSegmentControlIndexChanged:" destination="hkY-Eo-dyq" eventType="valueChanged" id="enL-oc-i5V"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your birthday?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynO-NO-kjU">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -108,6 +111,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0o-eU-a1Y">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButton:" destination="hkY-Eo-dyq" eventType="touchUpInside" id="hao-Ue-WMB"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MUb-h4-Ibd">
                                 <rect key="frame" x="-160" y="-108" width="320" height="216"/>
@@ -237,6 +243,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="birthdayDatePicker" destination="MUb-h4-Ibd" id="zqZ-Me-Qt4"/>
+                        <outlet property="firstNameTextField" destination="xPB-yD-lfM" id="0pi-Pl-Sz1"/>
+                        <outlet property="genderSegmentControl" destination="LHH-Dt-vG7" id="HLo-fO-L9q"/>
+                        <outlet property="lastNameTextField" destination="TMQ-W3-1Ei" id="iyy-Tu-hwc"/>
+                        <outlet property="userNameTextField" destination="gGB-HB-Szh" id="WpX-su-tI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEA-lO-vgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
