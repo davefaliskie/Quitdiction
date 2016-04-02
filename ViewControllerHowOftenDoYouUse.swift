@@ -23,7 +23,7 @@ class ViewControllerHowOftenDoYouUse: UIViewController, UIPickerViewDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        whatDrugTitleLabel.text = "How Oftern Do You \(addictionViaSegway)?"
+        whatDrugTitleLabel.text = "How Often Do You \(addictionViaSegway)?"
     }
     
     override func didReceiveMemoryWarning() {
