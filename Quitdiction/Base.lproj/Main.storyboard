@@ -113,7 +113,6 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerButton:" destination="hkY-Eo-dyq" eventType="touchUpInside" id="hao-Ue-WMB"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Njw-VF-HBi"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MUb-h4-Ibd">
@@ -1332,8 +1331,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LI9-9A-JdG"/>
         <segue reference="Jdq-iV-OmD"/>
-        <segue reference="Njw-VF-HBi"/>
+        <segue reference="7vs-J8-hii"/>
     </inferredMetricsTieBreakers>
 </document>

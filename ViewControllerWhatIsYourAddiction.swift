@@ -14,6 +14,7 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
     @IBOutlet weak var topicPicker: UIPickerView!
     @IBOutlet weak var myTopicLabel: UILabel!
     
+    let data = NSUserDefaults.standardUserDefaults()
     
     let topicPickerData = [
         "Select Habit",
@@ -76,6 +77,7 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        data.setValue(myTopicLabel.text, forKey: "myAddiction")
         if (segue.identifier == "setAddictionSegue") {
             if let destination = segue.destinationViewController as? ViewControllerHowOftenDoYouUse {
                 
