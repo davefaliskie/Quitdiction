@@ -288,13 +288,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQh-oY-XHD">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Test Suggestion"/>
-                                <connections>
-                                    <segue destination="1kY-ev-HdV" kind="show" id="eae-Ga-M4r"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -311,7 +304,6 @@
                             <constraint firstItem="KCB-Um-2R9" firstAttribute="top" secondItem="Odi-S1-06M" secondAttribute="bottom" constant="41" id="NB8-J1-mVY">
                                 <variation key="widthClass=compact" constant="95"/>
                             </constraint>
-                            <constraint firstItem="QQh-oY-XHD" firstAttribute="centerX" secondItem="Nja-2V-UjE" secondAttribute="centerX" id="NNE-2e-Rzg"/>
                             <constraint firstItem="eON-kY-UsI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qdt-4c-9Ug"/>
                             <constraint firstItem="Nja-2V-UjE" firstAttribute="centerX" secondItem="eON-kY-UsI" secondAttribute="centerX" id="gAC-3y-gll"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uj3-I0-qRX" secondAttribute="trailing" constant="83" id="iRZ-rM-Zkf"/>
@@ -320,7 +312,6 @@
                                 <variation key="widthClass=compact" constant="28"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="KCB-Um-2R9" secondAttribute="trailing" constant="161" id="sTP-98-SLn"/>
-                            <constraint firstItem="QQh-oY-XHD" firstAttribute="top" secondItem="Nja-2V-UjE" secondAttribute="bottom" constant="8" id="sdN-ke-0Lw"/>
                             <constraint firstItem="uj3-I0-qRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="zqk-f0-Qlx"/>
                         </constraints>
                         <variation key="default">
@@ -331,7 +322,6 @@
                                 <exclude reference="Nja-2V-UjE"/>
                                 <exclude reference="KCB-Um-2R9"/>
                                 <exclude reference="Odi-S1-06M"/>
-                                <exclude reference="QQh-oY-XHD"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="I7M-9U-cKz"/>
@@ -349,8 +339,6 @@
                                 <exclude reference="sTP-98-SLn"/>
                                 <exclude reference="AJq-oe-qEN"/>
                                 <exclude reference="gAC-3y-gll"/>
-                                <exclude reference="NNE-2e-Rzg"/>
-                                <exclude reference="sdN-ke-0Lw"/>
                                 <exclude reference="Qdt-4c-9Ug"/>
                                 <exclude reference="MDn-Qm-VQQ"/>
                                 <exclude reference="MNf-8p-Prt"/>
@@ -364,7 +352,6 @@
                                 <include reference="Nja-2V-UjE"/>
                                 <include reference="KCB-Um-2R9"/>
                                 <include reference="Odi-S1-06M"/>
-                                <include reference="QQh-oY-XHD"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="I7M-9U-cKz"/>
@@ -382,8 +369,6 @@
                                 <include reference="sTP-98-SLn"/>
                                 <include reference="AJq-oe-qEN"/>
                                 <include reference="gAC-3y-gll"/>
-                                <include reference="NNE-2e-Rzg"/>
-                                <include reference="sdN-ke-0Lw"/>
                                 <include reference="Qdt-4c-9Ug"/>
                                 <include reference="MDn-Qm-VQQ"/>
                                 <include reference="MNf-8p-Prt"/>
@@ -595,6 +580,9 @@
                                         <include reference="e9i-jF-3d6"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="1kY-ev-HdV" kind="show" id="RGB-n6-Cfw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aat-ZM-LUa">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -619,6 +607,9 @@
                                         <include reference="f5v-Yu-Ukg"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="4TR-qk-2b1" kind="show" id="3oh-Yk-S8B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -677,7 +668,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vL4-El-nrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="1134"/>
+            <point key="canvasLocation" x="1767" y="1154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sMf-xt-bNE">
+            <objects>
+                <viewController id="4TR-qk-2b1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uDH-oU-DZr"/>
+                        <viewControllerLayoutGuide type="bottom" id="SuG-GX-WWI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="etB-Zb-8Fg">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XO-Ta-Qk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524.5" y="1154"/>
         </scene>
         <!--View Controller Suggestion-->
         <scene sceneID="zZq-N7-sJC">
@@ -851,7 +859,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNc-1D-GI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="1140"/>
+            <point key="canvasLocation" x="1032" y="1154"/>
         </scene>
         <!--View Controller How Often Do You Use-->
         <scene sceneID="CpY-Hd-DYa">
