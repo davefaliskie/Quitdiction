@@ -860,30 +860,6 @@
                                     <segue destination="4TR-qk-2b1" kind="show" id="3oh-Yk-S8B"/>
                                 </connections>
                             </button>
-
-
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cye-KB-fV4">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="fX7-6v-qjc"/>
-                                </constraints>
-                                <state key="normal" title="Profile"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="fX7-6v-qjc"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="277" y="550" width="46" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="fX7-6v-qjc"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="n43-Ka-m93" kind="show" id="8u7-mI-Fep"/>
-                                </connections>
-                            </button>
-
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
