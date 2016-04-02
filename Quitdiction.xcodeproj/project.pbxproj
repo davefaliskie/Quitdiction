@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43A37981CAF6292005D759B /* ViewControllerRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */; };
 		F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3E11CAF586600EAA5FE /* AppDelegate.swift */; };
 		F639C3E41CAF586600EAA5FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3E31CAF586600EAA5FE /* ViewController.swift */; };
 		F639C3E71CAF586600EAA5FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F639C3E51CAF586600EAA5FE /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerRegisterUser.swift; path = ../ViewControllerRegisterUser.swift; sourceTree = "<group>"; };
 		F639C3DE1CAF586600EAA5FE /* Quitdiction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quitdiction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F639C3E11CAF586600EAA5FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F639C3E31CAF586600EAA5FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				F639C3F71CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift */,
 				F639C3E11CAF586600EAA5FE /* AppDelegate.swift */,
+				A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */,
 				F639C3E31CAF586600EAA5FE /* ViewController.swift */,
 				F639C3E51CAF586600EAA5FE /* Main.storyboard */,
 				F639C3E81CAF586600EAA5FE /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43A37981CAF6292005D759B /* ViewControllerRegisterUser.swift in Sources */,
 				F639C3E41CAF586600EAA5FE /* ViewController.swift in Sources */,
 				F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */,
 				F639C3F81CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift in Sources */,
@@ -290,6 +294,7 @@
 				F639C3F21CAF586600EAA5FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
