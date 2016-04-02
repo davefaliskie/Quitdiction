@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A43A37981CAF6292005D759B /* ViewControllerRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */; };
 		A43A379A1CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A37991CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift */; };
+		A447F2971CB05F470040FB2F /* ViewControllerUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447F2961CB05F470040FB2F /* ViewControllerUserProfile.swift */; };
 		A4F302AC1CAF806600B5C3B9 /* ViewControllerIWantIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F302AB1CAF806600B5C3B9 /* ViewControllerIWantIt.swift */; };
 		F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3E11CAF586600EAA5FE /* AppDelegate.swift */; };
 		F639C3E41CAF586600EAA5FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3E31CAF586600EAA5FE /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerRegisterUser.swift; path = ../ViewControllerRegisterUser.swift; sourceTree = "<group>"; };
 		A43A37991CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerHowOftenDoYouUse.swift; path = ../ViewControllerHowOftenDoYouUse.swift; sourceTree = "<group>"; };
+		A447F2961CB05F470040FB2F /* ViewControllerUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUserProfile.swift; sourceTree = "<group>"; };
 		A4F302AB1CAF806600B5C3B9 /* ViewControllerIWantIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerIWantIt.swift; sourceTree = "<group>"; };
 		F639C3DE1CAF586600EAA5FE /* Quitdiction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quitdiction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F639C3E11CAF586600EAA5FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				F639C3E31CAF586600EAA5FE /* ViewController.swift */,
 				A4F302AB1CAF806600B5C3B9 /* ViewControllerIWantIt.swift */,
 				F639C3E51CAF586600EAA5FE /* Main.storyboard */,
+				A447F2961CB05F470040FB2F /* ViewControllerUserProfile.swift */,
 				F639C3E81CAF586600EAA5FE /* Assets.xcassets */,
 				F639C3EA1CAF586600EAA5FE /* LaunchScreen.storyboard */,
 				F639C3ED1CAF586600EAA5FE /* Info.plist */,
@@ -159,6 +162,7 @@
 				F6621FB81CAF895000E1E167 /* ViewControllerSuggestion.swift in Sources */,
 				F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */,
 				A4F302AC1CAF806600B5C3B9 /* ViewControllerIWantIt.swift in Sources */,
+				A447F2971CB05F470040FB2F /* ViewControllerUserProfile.swift in Sources */,
 				F639C3F81CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift in Sources */,
 				A43A379A1CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift in Sources */,
 			);
