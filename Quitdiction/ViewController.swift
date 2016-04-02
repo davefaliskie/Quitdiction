@@ -39,17 +39,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
     override func viewDidAppear(animated: Bool) {
         setup()
     }
     
+
     func setup() {
         alertLabel.hidden = true
         if user["password"] as? String != nil {
             user = (data.objectForKey("user") as? NSDictionary)!
+
             print("if: ", user)
         }
         print("not if", user)
+
+        }
+
     }
     
     func verifyUserName() -> Bool {
