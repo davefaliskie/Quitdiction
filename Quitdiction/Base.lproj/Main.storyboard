@@ -113,6 +113,7 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerButton:" destination="hkY-Eo-dyq" eventType="touchUpInside" id="hao-Ue-WMB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Njw-VF-HBi"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MUb-h4-Ibd">
@@ -445,9 +446,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nja-2V-UjE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Forgot Password?"/>
+
+                                <connections>
+                                    <segue destination="s2h-Ri-U5a" kind="show" id="Hm9-6B-S5o"/>
+                                </connections>
+
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="138.5" y="502" width="123" height="30"/>
                                 </variation>
+
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-Um-2R9">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -488,6 +495,33 @@
                                 <exclude reference="Odi-S1-06M"/>
                                 <exclude reference="Med-9n-QQq"/>
                             </mask>
+
+                            <mask key="constraints">
+                                <exclude reference="I7M-9U-cKz"/>
+                                <exclude reference="7Du-uG-CzI"/>
+                                <exclude reference="9TN-pD-YS4"/>
+                                <exclude reference="Edc-0H-9KZ"/>
+                                <exclude reference="qB8-cF-r5q"/>
+                                <exclude reference="6cn-87-Kco"/>
+                                <exclude reference="N82-PN-wmy"/>
+                                <exclude reference="iRZ-rM-Zkf"/>
+                                <exclude reference="zqk-f0-Qlx"/>
+                                <exclude reference="BOj-QK-SbD"/>
+                                <exclude reference="Tth-Lj-qno"/>
+                                <exclude reference="nuG-0d-iZF"/>
+                                <exclude reference="sTP-98-SLn"/>
+                                <exclude reference="AJq-oe-qEN"/>
+                                <exclude reference="gAC-3y-gll"/>
+                                <exclude reference="Qdt-4c-9Ug"/>
+                                <exclude reference="MDn-Qm-VQQ"/>
+                                <exclude reference="MNf-8p-Prt"/>
+                                <exclude reference="Jr5-BC-hJn"/>
+                                <exclude reference="L8a-uc-MMV"/>
+                                <exclude reference="Z54-Oj-KKK"/>
+                                <exclude reference="n71-49-J3T"/>
+                            </mask>
+
+
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
@@ -499,6 +533,33 @@
                                 <include reference="Odi-S1-06M"/>
                                 <include reference="Med-9n-QQq"/>
                             </mask>
+
+                            <mask key="constraints">
+                                <include reference="I7M-9U-cKz"/>
+                                <include reference="7Du-uG-CzI"/>
+                                <include reference="9TN-pD-YS4"/>
+                                <include reference="Edc-0H-9KZ"/>
+                                <include reference="qB8-cF-r5q"/>
+                                <include reference="6cn-87-Kco"/>
+                                <include reference="N82-PN-wmy"/>
+                                <include reference="iRZ-rM-Zkf"/>
+                                <include reference="zqk-f0-Qlx"/>
+                                <include reference="BOj-QK-SbD"/>
+                                <include reference="Tth-Lj-qno"/>
+                                <include reference="nuG-0d-iZF"/>
+                                <include reference="sTP-98-SLn"/>
+                                <include reference="AJq-oe-qEN"/>
+                                <include reference="gAC-3y-gll"/>
+                                <include reference="Qdt-4c-9Ug"/>
+                                <include reference="MDn-Qm-VQQ"/>
+                                <include reference="MNf-8p-Prt"/>
+                                <include reference="Jr5-BC-hJn"/>
+                                <include reference="L8a-uc-MMV"/>
+                                <include reference="Z54-Oj-KKK"/>
+                                <include reference="n71-49-J3T"/>
+                            </mask>
+
+
                         </variation>
                     </view>
                     <connections>
@@ -833,7 +894,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out this tip prevent further use" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylw-bj-31U">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out this tip to prevent further use" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylw-bj-31U">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="00r-jC-Tdc"/>
@@ -1074,6 +1135,9 @@
                                         <include reference="szK-Uw-5CH"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="JJN-FC-icW" kind="show" id="3VS-BX-lpb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1202,7 +1266,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Complete your setup!"/>
                                 <connections>
-                                    <segue destination="JJN-FC-icW" kind="show" id="7vs-J8-hii"/>
+                                    <segue destination="JJN-FC-icW" kind="show" identifier="helpMyAddiction" id="7vs-J8-hii"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times per" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3c-2l-cLp">
@@ -1325,7 +1389,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+
+        <segue reference="LI9-9A-JdG"/>
+        <segue reference="Njw-VF-HBi"/>
+        <segue reference="Hm9-6B-S5o"/>
+
         <segue reference="EsG-18-UYf"/>
         <segue reference="LI9-9A-JdG"/>
+
     </inferredMetricsTieBreakers>
 </document>
