@@ -10,7 +10,13 @@ import UIKit
 
 class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
+    
     @IBOutlet weak var topicPicker: UIPickerView!
+    @IBOutlet weak var myTopicLabel: UILabel!
+    
+    @IBOutlet weak var addictionPicker: UIPickerView!
+    @IBOutlet weak var myAddictionLabel: UILabel!
+    
     
     let topicPickerData = [
         "Social Media",
@@ -22,10 +28,20 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
         "Video Games"
     ]
     
+    let addictionPickerData = [
+        "one",
+        "two",
+        "three"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         topicPicker.dataSource = self
         topicPicker.delegate = self
+        
+        addictionPicker.dataSource = self
+        addictionPicker.delegate = self
         
     }
     
@@ -36,10 +52,7 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
     
     
     
-    
-    
-    
-    //Delegates and data sources for the Topic Picker
+//*****Topic Picker Delegates and data sources
     //Data Sources
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         // returns 1 because there is one column of data
@@ -47,18 +60,39 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
     }
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         // gets the length of the array of data
-        return topicPickerData.count
+        
+        if pickerView.tag == 1 {
+            return topicPickerData.count
+        } else if pickerView.tag == 2 {
+            return addictionPickerData.count
+        }
+        return 1
+            
     }
     
     //Delegates
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return topicPickerData[row]
+        if pickerView.tag == 1 {
+            return topicPickerData[row]
+        } else if pickerView.tag == 2 {
+            return addictionPickerData[row]
+        }
+        return ""
+        
     }
     
-        //  **** if we wanted to set the selection from the picker to a label. ***
-        //    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //        myLabel.text = topicPickerData[row]
-        //    }
+ 
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        if pickerView.tag == 1{
+            myTopicLabel.text = topicPickerData[row]
+        } else if pickerView.tag == 2 {
+            myAddictionLabel.text = addictionPickerData[row]
+        }
+    
+    }
+ 
+    
 
     
 }
