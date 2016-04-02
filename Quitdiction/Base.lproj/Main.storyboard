@@ -1630,8 +1630,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+
         <segue reference="Njw-VF-HBi"/>
         <segue reference="EsG-18-UYf"/>
         <segue reference="LI9-9A-JdG"/>
+        <segue reference="LI9-9A-JdG"/>
+        <segue reference="Jdq-iV-OmD"/>
+        <segue reference="Njw-VF-HBi"/>
+        
     </inferredMetricsTieBreakers>
 </document>
