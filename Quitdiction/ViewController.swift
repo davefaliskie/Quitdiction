@@ -28,14 +28,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        alertLabel.hidden = true
-        user = (data.objectForKey("user") as? NSDictionary)!
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setup()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setup() {
+        alertLabel.hidden = true
+        if user["password"] as? String != nil {
+            user = (data.objectForKey("user") as? NSDictionary)!
+        }
     }
     
     func verifyUserName() -> Bool {
