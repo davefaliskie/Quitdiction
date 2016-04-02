@@ -68,6 +68,7 @@ class ViewControllerRegisterUser: UIViewController {
     func registerUser() {
         if verifyCredentials() == true {
             data.setObject(user, forKey: "user")
+            user = (data.objectForKey("user") as? NSDictionary)! as! [String : String]
             performSegueWithIdentifier("goToWhatIsYourAddictionView", sender: nil)
         } else {
             alertLabel.text = "Sorry! Something went wrong"
@@ -134,7 +135,6 @@ class ViewControllerRegisterUser: UIViewController {
         if let birthdate = birthday as String? {
             
             if birthdate != "" {
-                print("birth:", birthdate)
                 user["birthday"] = birthdate
             } else {
                 alertLabel.text = "Please select your birthday"

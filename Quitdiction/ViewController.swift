@@ -15,10 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var alertLabel: UILabel!
     
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        
-        if data.objectForKey("user") == nil {
-            user = (data.objectForKey("user") as? NSDictionary)! as! [String : String]
-        }
+        user = (data.objectForKey("user") as? NSDictionary)! as! [String : String]
         
         if verifyUserName() && verifyPassword() == true {
             performSegueWithIdentifier("goToWhatIsYourAddiction", sender: nil)
@@ -26,7 +23,7 @@ class ViewController: UIViewController {
             alertLabel.text = "Sorry! Something went wrong"
             hideAlertLabelAfterTime()
         }
-        print("User: ", user)
+        
     }
     
     var data = NSUserDefaults.standardUserDefaults()
@@ -49,6 +46,7 @@ class ViewController: UIViewController {
     }
     
     func verifyUserName() -> Bool {
+        
         if let userName = userNameTextField.text as String? {
             if userName == "" {
                 return false
