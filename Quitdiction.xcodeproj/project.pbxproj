@@ -17,6 +17,7 @@
 		F639C3EC1CAF586600EAA5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F639C3EA1CAF586600EAA5FE /* LaunchScreen.storyboard */; };
 		F639C3F81CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3F71CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift */; };
 		F6621FB81CAF895000E1E167 /* ViewControllerSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6621FB71CAF895000E1E167 /* ViewControllerSuggestion.swift */; };
+		F6B9B38D1CB02BAD0069CD4A /* ViewControllerRelapse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9B38C1CB02BAD0069CD4A /* ViewControllerRelapse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F639C3ED1CAF586600EAA5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F639C3F71CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerWhatIsYourAddiction.swift; path = ../ViewControllerWhatIsYourAddiction.swift; sourceTree = "<group>"; };
 		F6621FB71CAF895000E1E167 /* ViewControllerSuggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSuggestion.swift; sourceTree = "<group>"; };
+		F6B9B38C1CB02BAD0069CD4A /* ViewControllerRelapse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRelapse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				F639C3E31CAF586600EAA5FE /* ViewController.swift */,
 				A4F302AB1CAF806600B5C3B9 /* ViewControllerIWantIt.swift */,
 				F639C3E51CAF586600EAA5FE /* Main.storyboard */,
+				F6B9B38C1CB02BAD0069CD4A /* ViewControllerRelapse.swift */,
 				F639C3E81CAF586600EAA5FE /* Assets.xcassets */,
 				F639C3EA1CAF586600EAA5FE /* LaunchScreen.storyboard */,
 				F639C3ED1CAF586600EAA5FE /* Info.plist */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43A37981CAF6292005D759B /* ViewControllerRegisterUser.swift in Sources */,
+				F6B9B38D1CB02BAD0069CD4A /* ViewControllerRelapse.swift in Sources */,
 				F639C3E41CAF586600EAA5FE /* ViewController.swift in Sources */,
 				F6621FB81CAF895000E1E167 /* ViewControllerSuggestion.swift in Sources */,
 				F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */,

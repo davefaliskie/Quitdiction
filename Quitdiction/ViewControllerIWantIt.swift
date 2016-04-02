@@ -15,6 +15,8 @@ class ViewControllerIWantIt: UIViewController {
     @IBOutlet var whatDoIDoButton: UIButton!
     @IBOutlet var iDidItButton: UIButton!
     
+    var helpAddictionViaSegway = String()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,8 @@ class ViewControllerIWantIt: UIViewController {
         
         iDidItButton.layer.masksToBounds = true;
         iDidItButton.layer.cornerRadius = 59.5;
+        
+        imCravingTitleLabel.text = "Help! - I Want To \(helpAddictionViaSegway)!"
         
     }
     
