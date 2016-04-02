@@ -16,11 +16,14 @@ class ViewControllerHowOftenDoYouUse: UIViewController, UIPickerViewDelegate, UI
     @IBOutlet var frequencyPicker: UIPickerView!
     
     
+    
+    var addictionViaSegway = String()
+    
     var frequencies = ["Hour", "Day", "Week"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        whatDrugTitleLabel.text = "How Oftern Do You \(addictionViaSegway)?"
     }
     
     override func didReceiveMemoryWarning() {

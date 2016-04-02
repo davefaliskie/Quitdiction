@@ -14,24 +14,20 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
     @IBOutlet weak var topicPicker: UIPickerView!
     @IBOutlet weak var myTopicLabel: UILabel!
     
-    @IBOutlet weak var addictionPicker: UIPickerView!
-    @IBOutlet weak var myAddictionLabel: UILabel!
-    
     
     let topicPickerData = [
+        "Select Habit",
         "Social Media",
         "Food",
         "Drugs",
         "TV",
         "Sex",
         "Gambling",
-        "Video Games"
-    ]
-    
-    let addictionPickerData = [
-        "one",
-        "two",
-        "three"
+        "Video Games",
+        "Tobacco",
+        "Caffeine",
+        "Opiates",
+        "Benzos",
     ]
     
     override func viewDidLoad() {
@@ -39,9 +35,6 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
         
         topicPicker.dataSource = self
         topicPicker.delegate = self
-        
-        addictionPicker.dataSource = self
-        addictionPicker.delegate = self
         
     }
     
@@ -60,36 +53,47 @@ class ViewControllerWhatIsYourAddiction: UIViewController,UIPickerViewDataSource
     }
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         // gets the length of the array of data
-        
-        if pickerView.tag == 1 {
-            return topicPickerData.count
-        } else if pickerView.tag == 2 {
-            return addictionPickerData.count
-        }
-        return 1
+    
+        return topicPickerData.count
             
     }
     
     //Delegates
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView.tag == 1 {
-            return topicPickerData[row]
-        } else if pickerView.tag == 2 {
-            return addictionPickerData[row]
-        }
-        return ""
+        
+        return topicPickerData[row]
+        
         
     }
     
  
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        if pickerView.tag == 1{
-            myTopicLabel.text = topicPickerData[row]
-        } else if pickerView.tag == 2 {
-            myAddictionLabel.text = addictionPickerData[row]
-        }
+        myTopicLabel.text = topicPickerData[row]
+        
     
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "setAddictionSegue") {
+            if let destination = segue.destinationViewController as? ViewControllerHowOftenDoYouUse {
+                
+                switch myTopicLabel.text! {
+//                case "Social Media": destination.addictionViaSegway = "Use " + myTopicLabel.text!
+                case "Food": destination.addictionViaSegway = "Eat " + myTopicLabel.text!
+                case "Drugs": destination.addictionViaSegway = "Take " + myTopicLabel.text!
+                case "TV": destination.addictionViaSegway = "Watch " + myTopicLabel.text!
+                case "Sex": destination.addictionViaSegway = "Have " + myTopicLabel.text!
+                case "Gambling": destination.addictionViaSegway = "Go " + myTopicLabel.text!
+                case "Video Games": destination.addictionViaSegway = "Play " + myTopicLabel.text!
+                case "Caffeine": destination.addictionViaSegway = "Consume " + myTopicLabel.text!
+                    
+                default: destination.addictionViaSegway = "Use " + myTopicLabel.text!
+                }
+                
+            }
+        }
     }
  
     
