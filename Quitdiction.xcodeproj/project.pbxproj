@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A43A37981CAF6292005D759B /* ViewControllerRegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */; };
 		A43A379A1CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A37991CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift */; };
+		A4F302AC1CAF806600B5C3B9 /* ViewControllerIWantIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F302AB1CAF806600B5C3B9 /* ViewControllerIWantIt.swift */; };
 		F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3E11CAF586600EAA5FE /* AppDelegate.swift */; };
 		F639C3E41CAF586600EAA5FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3E31CAF586600EAA5FE /* ViewController.swift */; };
 		F639C3E71CAF586600EAA5FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F639C3E51CAF586600EAA5FE /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerRegisterUser.swift; path = ../ViewControllerRegisterUser.swift; sourceTree = "<group>"; };
 		A43A37991CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerHowOftenDoYouUse.swift; path = ../ViewControllerHowOftenDoYouUse.swift; sourceTree = "<group>"; };
+		A4F302AB1CAF806600B5C3B9 /* ViewControllerIWantIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerIWantIt.swift; sourceTree = "<group>"; };
 		F639C3DE1CAF586600EAA5FE /* Quitdiction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quitdiction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F639C3E11CAF586600EAA5FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F639C3E31CAF586600EAA5FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				A43A37971CAF6292005D759B /* ViewControllerRegisterUser.swift */,
 				F6621FB71CAF895000E1E167 /* ViewControllerSuggestion.swift */,
 				F639C3E31CAF586600EAA5FE /* ViewController.swift */,
+				A4F302AB1CAF806600B5C3B9 /* ViewControllerIWantIt.swift */,
 				F639C3E51CAF586600EAA5FE /* Main.storyboard */,
 				F639C3E81CAF586600EAA5FE /* Assets.xcassets */,
 				F639C3EA1CAF586600EAA5FE /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				F639C3E41CAF586600EAA5FE /* ViewController.swift in Sources */,
 				F6621FB81CAF895000E1E167 /* ViewControllerSuggestion.swift in Sources */,
 				F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */,
+				A4F302AC1CAF806600B5C3B9 /* ViewControllerIWantIt.swift in Sources */,
 				F639C3F81CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift in Sources */,
 				A43A379A1CAF7060005D759B /* ViewControllerHowOftenDoYouUse.swift in Sources */,
 			);
