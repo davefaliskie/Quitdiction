@@ -12,10 +12,11 @@ class ViewControllerUserProfile: UIViewController {
     
     let data = NSUserDefaults.standardUserDefaults()
     
-    var user = String()
+    var user = NSDictionary()
     var myAddiction = String()
     var frequencyString = String()
     
+    @IBOutlet var greetingLabel: UILabel!
     @IBOutlet var addictionLabel: UILabel!
     @IBOutlet var frequencyLabel: UILabel!
     
@@ -39,13 +40,15 @@ class ViewControllerUserProfile: UIViewController {
 
     func getpageInfo() {
         
-        user = data.objectForKey("user") as! String
+        user = data.objectForKey("user") as! NSDictionary
         myAddiction = data.valueForKey("myAddiction") as! String
         frequencyString = data.valueForKey("frequencyString") as! String
         
     }
     
     func updateLabels() {
+        let username = user["userName"] as! String
+        greetingLabel.text = "Hello, \(username)"
         addictionLabel.text = myAddiction
         frequencyLabel.text = frequencyString
     }
