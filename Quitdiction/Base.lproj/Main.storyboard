@@ -446,15 +446,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nja-2V-UjE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Forgot Password?"/>
-
-                                <connections>
-                                    <segue destination="s2h-Ri-U5a" kind="show" id="Hm9-6B-S5o"/>
-                                </connections>
-
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="138.5" y="502" width="123" height="30"/>
                                 </variation>
-
+                                <connections>
+                                    <segue destination="s2h-Ri-U5a" kind="show" id="Hm9-6B-S5o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-Um-2R9">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -495,33 +492,6 @@
                                 <exclude reference="Odi-S1-06M"/>
                                 <exclude reference="Med-9n-QQq"/>
                             </mask>
-
-                            <mask key="constraints">
-                                <exclude reference="I7M-9U-cKz"/>
-                                <exclude reference="7Du-uG-CzI"/>
-                                <exclude reference="9TN-pD-YS4"/>
-                                <exclude reference="Edc-0H-9KZ"/>
-                                <exclude reference="qB8-cF-r5q"/>
-                                <exclude reference="6cn-87-Kco"/>
-                                <exclude reference="N82-PN-wmy"/>
-                                <exclude reference="iRZ-rM-Zkf"/>
-                                <exclude reference="zqk-f0-Qlx"/>
-                                <exclude reference="BOj-QK-SbD"/>
-                                <exclude reference="Tth-Lj-qno"/>
-                                <exclude reference="nuG-0d-iZF"/>
-                                <exclude reference="sTP-98-SLn"/>
-                                <exclude reference="AJq-oe-qEN"/>
-                                <exclude reference="gAC-3y-gll"/>
-                                <exclude reference="Qdt-4c-9Ug"/>
-                                <exclude reference="MDn-Qm-VQQ"/>
-                                <exclude reference="MNf-8p-Prt"/>
-                                <exclude reference="Jr5-BC-hJn"/>
-                                <exclude reference="L8a-uc-MMV"/>
-                                <exclude reference="Z54-Oj-KKK"/>
-                                <exclude reference="n71-49-J3T"/>
-                            </mask>
-
-
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
@@ -533,33 +503,6 @@
                                 <include reference="Odi-S1-06M"/>
                                 <include reference="Med-9n-QQq"/>
                             </mask>
-
-                            <mask key="constraints">
-                                <include reference="I7M-9U-cKz"/>
-                                <include reference="7Du-uG-CzI"/>
-                                <include reference="9TN-pD-YS4"/>
-                                <include reference="Edc-0H-9KZ"/>
-                                <include reference="qB8-cF-r5q"/>
-                                <include reference="6cn-87-Kco"/>
-                                <include reference="N82-PN-wmy"/>
-                                <include reference="iRZ-rM-Zkf"/>
-                                <include reference="zqk-f0-Qlx"/>
-                                <include reference="BOj-QK-SbD"/>
-                                <include reference="Tth-Lj-qno"/>
-                                <include reference="nuG-0d-iZF"/>
-                                <include reference="sTP-98-SLn"/>
-                                <include reference="AJq-oe-qEN"/>
-                                <include reference="gAC-3y-gll"/>
-                                <include reference="Qdt-4c-9Ug"/>
-                                <include reference="MDn-Qm-VQQ"/>
-                                <include reference="MNf-8p-Prt"/>
-                                <include reference="Jr5-BC-hJn"/>
-                                <include reference="L8a-uc-MMV"/>
-                                <include reference="Z54-Oj-KKK"/>
-                                <include reference="n71-49-J3T"/>
-                            </mask>
-
-
                         </variation>
                     </view>
                     <connections>
@@ -1389,13 +1332,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-
         <segue reference="LI9-9A-JdG"/>
+        <segue reference="Jdq-iV-OmD"/>
         <segue reference="Njw-VF-HBi"/>
-        <segue reference="Hm9-6B-S5o"/>
-
-        <segue reference="EsG-18-UYf"/>
-        <segue reference="LI9-9A-JdG"/>
-
     </inferredMetricsTieBreakers>
 </document>
