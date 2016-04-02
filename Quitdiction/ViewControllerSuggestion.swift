@@ -14,14 +14,27 @@ class ViewControllerSuggestion: UIViewController {
     @IBAction func noWayButton(sender: AnyObject) {
         generateSuggestion()
     }
-    
-    
    
     // all the suggestions
     var suggestionData = [
-        "Go to bed",
-        "Cry",
-        "Fight someone"
+        "Go for a run",
+        "Go for a jog",
+        "Read a book",
+        "Go for a hike",
+        "Go for a walk",
+        "Play a boardgame",
+        "Call a friend",
+        "Call a relative",
+        "Take a nap",
+        "Go to the gym",
+        "Go to the spa",
+        "Play with a pet",
+        "Stop and smell the flowers",
+        "Count the clocks",
+        "Say hi to the person next to you",
+        "Stretch",
+        "Meditate",
+        "Scream"
     ]
     
     
