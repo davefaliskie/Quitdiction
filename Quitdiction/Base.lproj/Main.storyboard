@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,6 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ram-X7-VlG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eYX-CD-w0G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doy-Pi-2qA">
@@ -179,16 +180,19 @@
                                 <exclude reference="MUb-h4-Ibd"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="RPh-M9-CFb"/>
-                                <exclude reference="WH6-4P-gpl"/>
-                                <exclude reference="Qu3-Xo-dxi"/>
-                                <exclude reference="xAS-bE-X0r"/>
+                                <exclude reference="EJb-Fj-mtg"/>
                                 <exclude reference="7PH-e0-ZC4"/>
                                 <exclude reference="RJc-Ux-fiD"/>
                                 <exclude reference="cpW-I8-3N3"/>
                                 <exclude reference="bUC-E5-B4o"/>
                                 <exclude reference="oye-K2-ZfZ"/>
                                 <exclude reference="zVj-2B-1kP"/>
+                                <exclude reference="Qu3-Xo-dxi"/>
+                                <exclude reference="xAS-bE-X0r"/>
+                                <exclude reference="6eo-9P-sOy"/>
+                                <exclude reference="RPh-M9-CFb"/>
+                                <exclude reference="WH6-4P-gpl"/>
+                                <exclude reference="IZv-Cf-8bC"/>
                                 <exclude reference="JqF-xJ-h0l"/>
                                 <exclude reference="eK6-8F-lPR"/>
                                 <exclude reference="f0f-ZF-q9V"/>
@@ -196,9 +200,6 @@
                                 <exclude reference="AXi-mb-kPI"/>
                                 <exclude reference="ZMA-Cx-lXa"/>
                                 <exclude reference="hQB-6c-S50"/>
-                                <exclude reference="IZv-Cf-8bC"/>
-                                <exclude reference="6eo-9P-sOy"/>
-                                <exclude reference="EJb-Fj-mtg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -213,16 +214,19 @@
                                 <include reference="MUb-h4-Ibd"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="RPh-M9-CFb"/>
-                                <include reference="WH6-4P-gpl"/>
-                                <include reference="Qu3-Xo-dxi"/>
-                                <include reference="xAS-bE-X0r"/>
+                                <include reference="EJb-Fj-mtg"/>
                                 <include reference="7PH-e0-ZC4"/>
                                 <include reference="RJc-Ux-fiD"/>
                                 <include reference="cpW-I8-3N3"/>
                                 <exclude reference="bUC-E5-B4o"/>
                                 <exclude reference="oye-K2-ZfZ"/>
                                 <include reference="zVj-2B-1kP"/>
+                                <include reference="Qu3-Xo-dxi"/>
+                                <include reference="xAS-bE-X0r"/>
+                                <include reference="6eo-9P-sOy"/>
+                                <include reference="RPh-M9-CFb"/>
+                                <include reference="WH6-4P-gpl"/>
+                                <include reference="IZv-Cf-8bC"/>
                                 <include reference="JqF-xJ-h0l"/>
                                 <include reference="eK6-8F-lPR"/>
                                 <include reference="f0f-ZF-q9V"/>
@@ -230,9 +234,6 @@
                                 <include reference="AXi-mb-kPI"/>
                                 <include reference="ZMA-Cx-lXa"/>
                                 <include reference="hQB-6c-S50"/>
-                                <include reference="IZv-Cf-8bC"/>
-                                <include reference="6eo-9P-sOy"/>
-                                <include reference="EJb-Fj-mtg"/>
                             </mask>
                         </variation>
                     </view>
@@ -385,6 +386,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TZo-0P-G3p"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gzO-w6-H04">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Is Your Addiction?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq4-r3-B55">
