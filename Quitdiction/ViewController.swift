@@ -21,6 +21,7 @@ class ViewController: UIViewController {
             alertLabel.text = "Sorry! Something went wrong"
             hideAlertLabelAfterTime()
         }
+        print("user: ", user = (data.objectForKey("user") as? NSDictionary)!)
     }
     
     var data = NSUserDefaults.standardUserDefaults()
@@ -28,9 +29,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        alertLabel.hidden = true
-        user = (data.objectForKey("user") as? NSDictionary)!
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setup()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,12 +39,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        setup()
+    }
+    
+    func setup() {
+        alertLabel.hidden = true
+        if user["password"] as? String != nil {
+            user = (data.objectForKey("user") as? NSDictionary)!
+            print("if: ", user)
+        }
+        print("not if", user)
+    }
+    
     func verifyUserName() -> Bool {
+        print("user: ", user["userName"])
         if let userName = userNameTextField.text as String? {
             if userName == "" {
                 return false
             } else {
-                if userName == user["userName"] as! String! {
+                if userName == user["userName"] as! String {
                     return true
                 }
             }
@@ -61,7 +76,7 @@ class ViewController: UIViewController {
             if password == "" {
                 return false
             } else {
-                if password == user["password"] as! String!{
+                if password == user["password"] as! String {
                     return true
                 } else {
                     alertLabel.text = "Sorry! Incorrect password"

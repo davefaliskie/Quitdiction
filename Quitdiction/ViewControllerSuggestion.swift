@@ -27,6 +27,8 @@ class ViewControllerSuggestion: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let randomIndex = Int(arc4random_uniform(UInt32(suggestionData.count)))
+        suggestionLabel.text = suggestionData[randomIndex]
         
     }
     
