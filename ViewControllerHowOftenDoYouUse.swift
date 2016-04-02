@@ -60,12 +60,4 @@ class ViewControllerHowOftenDoYouUse: UIViewController, UIPickerViewDelegate, UI
         return pickerLabel!;
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "helpMyAddiction") {
-            if let destination = segue.destinationViewController as? ViewControllerIWantIt {
-                destination.helpAddictionViaSegway = addictionViaSegway
-            }
-        }
-    }
-    
 }
