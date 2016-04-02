@@ -12,6 +12,7 @@
 		F639C3E71CAF586600EAA5FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F639C3E51CAF586600EAA5FE /* Main.storyboard */; };
 		F639C3E91CAF586600EAA5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F639C3E81CAF586600EAA5FE /* Assets.xcassets */; };
 		F639C3EC1CAF586600EAA5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F639C3EA1CAF586600EAA5FE /* LaunchScreen.storyboard */; };
+		F639C3F81CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C3F71CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F639C3E81CAF586600EAA5FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F639C3EB1CAF586600EAA5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F639C3ED1CAF586600EAA5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F639C3F71CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerWhatIsYourAddiction.swift; path = ../ViewControllerWhatIsYourAddiction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F639C3E01CAF586600EAA5FE /* Quitdiction */ = {
 			isa = PBXGroup;
 			children = (
+				F639C3F71CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift */,
 				F639C3E11CAF586600EAA5FE /* AppDelegate.swift */,
 				F639C3E31CAF586600EAA5FE /* ViewController.swift */,
 				F639C3E51CAF586600EAA5FE /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				F639C3E41CAF586600EAA5FE /* ViewController.swift in Sources */,
 				F639C3E21CAF586600EAA5FE /* AppDelegate.swift in Sources */,
+				F639C3F81CAF5F0300EAA5FE /* ViewControllerWhatIsYourAddiction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
