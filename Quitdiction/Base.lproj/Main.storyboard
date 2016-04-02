@@ -7,10 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Register User-->
         <scene sceneID="6Ap-JU-t3b">
             <objects>
-                <viewController id="hkY-Eo-dyq" sceneMemberID="viewController">
+                <viewController id="hkY-Eo-dyq" customClass="ViewControllerRegisterUser" customModule="Quitdiction" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="utA-bv-n24"/>
                         <viewControllerLayoutGuide type="bottom" id="ram-X7-VlG"/>
@@ -493,7 +493,173 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVf-BP-yxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="429"/>
+            <point key="canvasLocation" x="1032" y="429"/>
+        </scene>
+        <!--View ControllerI Want It-->
+        <scene sceneID="pON-CR-EoP">
+            <objects>
+                <viewController id="JJN-FC-icW" customClass="ViewControllerIWantIt" customModule="Quitdiction" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cA5-dL-a8D"/>
+                        <viewControllerLayoutGuide type="bottom" id="w6E-M5-UmK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cIC-Wg-PsV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quitdiction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2n-uF-gYb">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="x8t-Dt-DFk">
+                                        <variation key="widthClass=compact" constant="35"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="x8t-Dt-DFk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="x8t-Dt-DFk"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help! - I'm craving tobacco!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jF-DY-QVH">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="G5z-HZ-OLw">
+                                        <variation key="widthClass=compact" constant="24"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="360" id="PXD-f3-1Ae"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="G5z-HZ-OLw"/>
+                                        <exclude reference="PXD-f3-1Ae"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="G5z-HZ-OLw"/>
+                                        <include reference="PXD-f3-1Ae"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2p-0P-bYl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.27213284957980788" green="1" blue="0.37879229456349106" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="Ufg-72-374"/>
+                                    <constraint firstAttribute="height" constant="108" id="e9i-jF-3d6">
+                                        <variation key="widthClass=compact" constant="118"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="What do I do?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ufg-72-374"/>
+                                        <exclude reference="e9i-jF-3d6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ufg-72-374"/>
+                                        <include reference="e9i-jF-3d6"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aat-ZM-LUa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.31248267698093585" green="0.46994087333529339" blue="0.90202809343434343" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="728-F3-kf9"/>
+                                    <constraint firstAttribute="width" constant="118" id="f5v-Yu-Ukg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="I did it">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="728-F3-kf9"/>
+                                        <exclude reference="f5v-Yu-Ukg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="728-F3-kf9"/>
+                                        <include reference="f5v-Yu-Ukg"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aat-ZM-LUa" firstAttribute="centerX" secondItem="h2p-0P-bYl" secondAttribute="centerX" id="4sh-sk-18w"/>
+                            <constraint firstItem="v2n-uF-gYb" firstAttribute="centerX" secondItem="cIC-Wg-PsV" secondAttribute="centerX" id="9pB-g6-DdR"/>
+                            <constraint firstItem="9jF-DY-QVH" firstAttribute="top" secondItem="v2n-uF-gYb" secondAttribute="bottom" constant="8" id="CBl-G4-O9M"/>
+                            <constraint firstItem="w6E-M5-UmK" firstAttribute="top" secondItem="aat-ZM-LUa" secondAttribute="bottom" constant="73" id="D2v-tQ-khv"/>
+                            <constraint firstItem="aat-ZM-LUa" firstAttribute="top" secondItem="h2p-0P-bYl" secondAttribute="bottom" constant="87" id="PK2-eG-Ob4"/>
+                            <constraint firstItem="v2n-uF-gYb" firstAttribute="top" secondItem="cA5-dL-a8D" secondAttribute="bottom" constant="20" id="VWt-Vc-Und"/>
+                            <constraint firstItem="h2p-0P-bYl" firstAttribute="centerX" secondItem="9jF-DY-QVH" secondAttribute="centerX" id="oUJ-DO-x6e"/>
+                            <constraint firstItem="9jF-DY-QVH" firstAttribute="centerX" secondItem="v2n-uF-gYb" secondAttribute="centerX" id="yXS-vw-miz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="v2n-uF-gYb"/>
+                                <exclude reference="9jF-DY-QVH"/>
+                                <exclude reference="h2p-0P-bYl"/>
+                                <exclude reference="aat-ZM-LUa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CBl-G4-O9M"/>
+                                <exclude reference="yXS-vw-miz"/>
+                                <exclude reference="9pB-g6-DdR"/>
+                                <exclude reference="VWt-Vc-Und"/>
+                                <exclude reference="oUJ-DO-x6e"/>
+                                <exclude reference="4sh-sk-18w"/>
+                                <exclude reference="PK2-eG-Ob4"/>
+                                <exclude reference="D2v-tQ-khv"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="v2n-uF-gYb"/>
+                                <include reference="9jF-DY-QVH"/>
+                                <include reference="h2p-0P-bYl"/>
+                                <include reference="aat-ZM-LUa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CBl-G4-O9M"/>
+                                <include reference="yXS-vw-miz"/>
+                                <include reference="9pB-g6-DdR"/>
+                                <include reference="VWt-Vc-Und"/>
+                                <include reference="oUJ-DO-x6e"/>
+                                <include reference="4sh-sk-18w"/>
+                                <include reference="PK2-eG-Ob4"/>
+                                <include reference="D2v-tQ-khv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="iDidItButton" destination="aat-ZM-LUa" id="8oH-jQ-QAh"/>
+                        <outlet property="imCravingTitleLabel" destination="9jF-DY-QVH" id="wf1-MI-ghO"/>
+                        <outlet property="whatDoIDoButton" destination="h2p-0P-bYl" id="rCW-B1-sf9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vL4-El-nrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="1134"/>
         </scene>
         <!--View Controller How Often Do You Use-->
         <scene sceneID="CpY-Hd-DYa">
@@ -549,6 +715,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvl-JL-Jod">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Complete your setup!"/>
+                                <connections>
+                                    <segue destination="JJN-FC-icW" kind="show" id="7vs-J8-hii"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times per" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3c-2l-cLp">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -666,7 +835,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iE6-VE-UE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957" y="429"/>
+            <point key="canvasLocation" x="1767" y="429"/>
         </scene>
     </scenes>
 </document>
