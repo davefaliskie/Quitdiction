@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,17 +23,6 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="179" width="193" height="30"/>
-                                </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Odi-S1-06M">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="241" width="193" height="30"/>
-                                </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B53-nA-hOB">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -39,19 +30,75 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eON-kY-UsI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="No account? Click here to register"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nja-2V-UjE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Forgot Password?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-Um-2R9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Odi-S1-06M">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="uj3-I0-qRX" firstAttribute="top" secondItem="B53-nA-hOB" secondAttribute="bottom" constant="34" id="6cn-87-Kco"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Odi-S1-06M" secondAttribute="trailing" constant="83" id="7Du-uG-CzI"/>
+                            <constraint firstItem="Odi-S1-06M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9TN-pD-YS4"/>
+                            <constraint firstItem="Nja-2V-UjE" firstAttribute="top" secondItem="eON-kY-UsI" secondAttribute="bottom" constant="8" id="AJq-oe-qEN"/>
+                            <constraint firstItem="KCB-Um-2R9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOj-QK-SbD"/>
+                            <constraint firstItem="Odi-S1-06M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="Edc-0H-9KZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eON-kY-UsI" secondAttribute="bottom" constant="106" id="I7M-9U-cKz"/>
                             <constraint firstItem="B53-nA-hOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MDn-Qm-VQQ"/>
                             <constraint firstItem="B53-nA-hOB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="104" id="MNf-8p-Prt"/>
+                            <constraint firstItem="uj3-I0-qRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N82-PN-wmy"/>
+                            <constraint firstItem="KCB-Um-2R9" firstAttribute="top" secondItem="Odi-S1-06M" secondAttribute="bottom" constant="41" id="NB8-J1-mVY">
+                                <variation key="widthClass=compact" constant="95"/>
+                            </constraint>
+                            <constraint firstItem="eON-kY-UsI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qdt-4c-9Ug"/>
+                            <constraint firstItem="Nja-2V-UjE" firstAttribute="centerX" secondItem="eON-kY-UsI" secondAttribute="centerX" id="gAC-3y-gll"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uj3-I0-qRX" secondAttribute="trailing" constant="83" id="iRZ-rM-Zkf"/>
+                            <constraint firstItem="KCB-Um-2R9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="161" id="nuG-0d-iZF"/>
+                            <constraint firstItem="Odi-S1-06M" firstAttribute="top" secondItem="uj3-I0-qRX" secondAttribute="bottom" constant="32" id="qB8-cF-r5q">
+                                <variation key="widthClass=compact" constant="28"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="KCB-Um-2R9" secondAttribute="trailing" constant="161" id="sTP-98-SLn"/>
+                            <constraint firstItem="uj3-I0-qRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="zqk-f0-Qlx"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="uj3-I0-qRX"/>
-                                <exclude reference="Odi-S1-06M"/>
                                 <exclude reference="B53-nA-hOB"/>
+                                <exclude reference="eON-kY-UsI"/>
+                                <exclude reference="Nja-2V-UjE"/>
+                                <exclude reference="KCB-Um-2R9"/>
+                                <exclude reference="Odi-S1-06M"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="I7M-9U-cKz"/>
+                                <exclude reference="7Du-uG-CzI"/>
+                                <exclude reference="9TN-pD-YS4"/>
+                                <exclude reference="Edc-0H-9KZ"/>
+                                <exclude reference="qB8-cF-r5q"/>
+                                <exclude reference="6cn-87-Kco"/>
+                                <exclude reference="N82-PN-wmy"/>
+                                <exclude reference="iRZ-rM-Zkf"/>
+                                <exclude reference="zqk-f0-Qlx"/>
+                                <exclude reference="BOj-QK-SbD"/>
+                                <exclude reference="NB8-J1-mVY"/>
+                                <exclude reference="nuG-0d-iZF"/>
+                                <exclude reference="sTP-98-SLn"/>
+                                <exclude reference="AJq-oe-qEN"/>
+                                <exclude reference="gAC-3y-gll"/>
+                                <exclude reference="Qdt-4c-9Ug"/>
                                 <exclude reference="MDn-Qm-VQQ"/>
                                 <exclude reference="MNf-8p-Prt"/>
                             </mask>
@@ -59,10 +106,29 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="uj3-I0-qRX"/>
-                                <include reference="Odi-S1-06M"/>
                                 <include reference="B53-nA-hOB"/>
+                                <include reference="eON-kY-UsI"/>
+                                <include reference="Nja-2V-UjE"/>
+                                <include reference="KCB-Um-2R9"/>
+                                <include reference="Odi-S1-06M"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="I7M-9U-cKz"/>
+                                <include reference="7Du-uG-CzI"/>
+                                <include reference="9TN-pD-YS4"/>
+                                <include reference="Edc-0H-9KZ"/>
+                                <include reference="qB8-cF-r5q"/>
+                                <include reference="6cn-87-Kco"/>
+                                <include reference="N82-PN-wmy"/>
+                                <include reference="iRZ-rM-Zkf"/>
+                                <include reference="zqk-f0-Qlx"/>
+                                <include reference="BOj-QK-SbD"/>
+                                <include reference="NB8-J1-mVY"/>
+                                <include reference="nuG-0d-iZF"/>
+                                <include reference="sTP-98-SLn"/>
+                                <include reference="AJq-oe-qEN"/>
+                                <include reference="gAC-3y-gll"/>
+                                <include reference="Qdt-4c-9Ug"/>
                                 <include reference="MDn-Qm-VQQ"/>
                                 <include reference="MNf-8p-Prt"/>
                             </mask>
