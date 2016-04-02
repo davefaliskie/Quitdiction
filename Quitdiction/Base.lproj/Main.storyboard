@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HD4-SF-JRg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HD4-SF-JRg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -146,6 +146,27 @@
                                     </mask>
                                 </variation>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your user name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfn-K4-seu">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="C58-NU-iL9">
+                                        <variation key="widthClass=compact" constant="360"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C58-NU-iL9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="C58-NU-iL9"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -171,8 +192,12 @@
                             <constraint firstItem="LHH-Dt-vG7" firstAttribute="top" secondItem="gGB-HB-Szh" secondAttribute="bottom" constant="8" id="f0f-ZF-q9V"/>
                             <constraint firstItem="MUb-h4-Ibd" firstAttribute="top" secondItem="ynO-NO-kjU" secondAttribute="bottom" constant="8" id="hQB-6c-S50"/>
                             <constraint firstItem="gGB-HB-Szh" firstAttribute="leading" secondItem="TMQ-W3-1Ei" secondAttribute="trailing" constant="-175" id="oye-K2-ZfZ"/>
+                            <constraint firstItem="Bfn-K4-seu" firstAttribute="top" secondItem="MUb-h4-Ibd" secondAttribute="bottom" constant="25" id="wXq-dh-PuP"/>
                             <constraint firstItem="xPB-yD-lfM" firstAttribute="centerX" secondItem="doy-Pi-2qA" secondAttribute="centerX" id="xAS-bE-X0r"/>
                             <constraint firstItem="gGB-HB-Szh" firstAttribute="top" secondItem="TMQ-W3-1Ei" secondAttribute="bottom" constant="8" id="zVj-2B-1kP"/>
+                            <constraint firstItem="Bfn-K4-seu" firstAttribute="centerX" secondItem="MUb-h4-Ibd" secondAttribute="centerX" id="zgf-YT-r6j">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -184,28 +209,31 @@
                                 <exclude reference="ynO-NO-kjU"/>
                                 <exclude reference="A0o-eU-a1Y"/>
                                 <exclude reference="MUb-h4-Ibd"/>
+                                <exclude reference="Bfn-K4-seu"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="EJb-Fj-mtg"/>
+                                <exclude reference="RPh-M9-CFb"/>
+                                <exclude reference="WH6-4P-gpl"/>
+                                <exclude reference="Qu3-Xo-dxi"/>
+                                <exclude reference="xAS-bE-X0r"/>
                                 <exclude reference="7PH-e0-ZC4"/>
                                 <exclude reference="RJc-Ux-fiD"/>
                                 <exclude reference="cpW-I8-3N3"/>
                                 <exclude reference="bUC-E5-B4o"/>
                                 <exclude reference="oye-K2-ZfZ"/>
                                 <exclude reference="zVj-2B-1kP"/>
-                                <exclude reference="Qu3-Xo-dxi"/>
-                                <exclude reference="xAS-bE-X0r"/>
-                                <exclude reference="6eo-9P-sOy"/>
-                                <exclude reference="RPh-M9-CFb"/>
-                                <exclude reference="WH6-4P-gpl"/>
-                                <exclude reference="IZv-Cf-8bC"/>
                                 <exclude reference="JqF-xJ-h0l"/>
                                 <exclude reference="eK6-8F-lPR"/>
                                 <exclude reference="f0f-ZF-q9V"/>
+                                <exclude reference="IZv-Cf-8bC"/>
                                 <exclude reference="8ul-S9-I4K"/>
                                 <exclude reference="AXi-mb-kPI"/>
                                 <exclude reference="ZMA-Cx-lXa"/>
                                 <exclude reference="hQB-6c-S50"/>
+                                <exclude reference="wXq-dh-PuP"/>
+                                <exclude reference="zgf-YT-r6j"/>
+                                <exclude reference="6eo-9P-sOy"/>
+                                <exclude reference="EJb-Fj-mtg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -218,37 +246,42 @@
                                 <include reference="ynO-NO-kjU"/>
                                 <include reference="A0o-eU-a1Y"/>
                                 <include reference="MUb-h4-Ibd"/>
+                                <include reference="Bfn-K4-seu"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="EJb-Fj-mtg"/>
+                                <include reference="RPh-M9-CFb"/>
+                                <include reference="WH6-4P-gpl"/>
+                                <include reference="Qu3-Xo-dxi"/>
+                                <include reference="xAS-bE-X0r"/>
                                 <include reference="7PH-e0-ZC4"/>
                                 <include reference="RJc-Ux-fiD"/>
                                 <include reference="cpW-I8-3N3"/>
                                 <exclude reference="bUC-E5-B4o"/>
                                 <exclude reference="oye-K2-ZfZ"/>
                                 <include reference="zVj-2B-1kP"/>
-                                <include reference="Qu3-Xo-dxi"/>
-                                <include reference="xAS-bE-X0r"/>
-                                <include reference="6eo-9P-sOy"/>
-                                <include reference="RPh-M9-CFb"/>
-                                <include reference="WH6-4P-gpl"/>
-                                <include reference="IZv-Cf-8bC"/>
                                 <include reference="JqF-xJ-h0l"/>
                                 <include reference="eK6-8F-lPR"/>
                                 <include reference="f0f-ZF-q9V"/>
+                                <include reference="IZv-Cf-8bC"/>
                                 <exclude reference="8ul-S9-I4K"/>
                                 <include reference="AXi-mb-kPI"/>
                                 <include reference="ZMA-Cx-lXa"/>
                                 <include reference="hQB-6c-S50"/>
+                                <include reference="wXq-dh-PuP"/>
+                                <include reference="zgf-YT-r6j"/>
+                                <include reference="6eo-9P-sOy"/>
+                                <include reference="EJb-Fj-mtg"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="alertLabel" destination="Bfn-K4-seu" id="GxU-sW-i57"/>
                         <outlet property="birthdayDatePicker" destination="MUb-h4-Ibd" id="zqZ-Me-Qt4"/>
                         <outlet property="firstNameTextField" destination="xPB-yD-lfM" id="0pi-Pl-Sz1"/>
                         <outlet property="genderSegmentControl" destination="LHH-Dt-vG7" id="HLo-fO-L9q"/>
                         <outlet property="lastNameTextField" destination="TMQ-W3-1Ei" id="iyy-Tu-hwc"/>
                         <outlet property="userNameTextField" destination="gGB-HB-Szh" id="WpX-su-tI3"/>
+                        <segue destination="s2h-Ri-U5a" kind="show" identifier="goToWhatIsYourAddictionView" id="Jdq-iV-OmD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEA-lO-vgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,13 +337,13 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="N0R-uP-AVn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop being a hooked like a fish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAe-jf-9X6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop being hooked like a fish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAe-jf-9X6">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="84" y="386" width="233" height="21"/>
+                                    <rect key="frame" x="97" y="386" width="220" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -1104,4 +1137,7 @@
             <point key="canvasLocation" x="1767" y="429"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jdq-iV-OmD"/>
+    </inferredMetricsTieBreakers>
 </document>
